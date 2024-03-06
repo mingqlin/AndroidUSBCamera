@@ -324,6 +324,11 @@ class CameraUVC(ctx: Context, device: UsbDevice) : MultiCameraClient.ICamera(ctx
         mUvcCamera?.autoFocus = enable
     }
 
+    fun setFocus(distance: Int) {
+        mUvcCamera?.setFocus(distance)
+    }
+
+
     /**
      * Get auto focus
      *
